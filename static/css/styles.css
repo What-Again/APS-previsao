@@ -1,0 +1,132 @@
+/* Reset de margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  height: 100vh; /* Altura total da viewport */
+  width: 100vw; /* Largura total da viewport */
+  display: flex; /* Usa flexbox para centralizar conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  background-image: url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTcxMzIyODMxOA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600"); /* Imagem de fundo */
+}
+
+/* Estilos para a caixa maior que contém todos os elementos */
+.caixa-Maior {
+  background-color: #000000; /* Fundo preto */
+  opacity: 0.8; /* Transparência */
+  border-radius: 25px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  width: 95%; /* Largura responsiva */
+  max-width: 450px; /* Largura máxima */
+}
+
+/* Estilos para o campo de entrada da cidade */
+.input-cidade {
+  border: none; /* Remove borda padrão */
+  outline: none; /* Remove contorno ao focar */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-size: 18px; /* Tamanho da fonte */
+  background-color: #7c7c7c2b; /* Fundo cinza transparente */
+  color: #ffffff; /* Cor do texto */
+  width: calc(100% - 100px); /* Largura ajustada */
+}
+
+/* Estilos para o botão de busca */
+.botao-busca {
+  border: none; /* Remove borda padrão */
+  outline: none; /* Remove contorno ao focar */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 50px; /* Bordas arredondadas */
+  background-color: #7c7c7c2b; /* Fundo cinza transparente */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+/* Estilos para a imagem do botão de busca */
+.img-busca {
+  width: 20px; /* Largura da imagem */
+}
+
+/* Espaçamento para separar elementos */
+.caixa-Media {
+  margin-top: 30px; /* Espaçamento superior */
+}
+
+/* Estilos para o nome da cidade */
+.cidade {
+  color: #ffffff; /* Cor do texto */
+  font-size: 28px; /* Tamanho da fonte */
+  font-weight: 300; /* Peso da fonte */
+}
+
+/* Estilos para a temperatura */
+.temp {
+  font-size: 20px; /* Tamanho da fonte */
+  color: #ffffff; /* Cor do texto */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para a previsão de temperatura */
+.temp-previsao {
+  font-size: 20px; /* Tamanho da fonte */
+  color: #ffffff; /* Cor do texto */
+  margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilos para a caixa menor que contém a imagem e descrição do clima */
+.caixa-Menor {
+  display: flex; /* Usa flexbox para layout */
+  align-items: center; /* Alinha itens centralmente */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para a descrição do clima */
+.texto-previsao {
+  color: #ffffff; /* Cor do texto */
+  margin-left: 20px; /* Espaçamento à esquerda */
+  text-transform: capitalize; /* Primeira letra maiúscula */
+}
+
+/* Estilos para a umidade */
+.umidade {
+  color: #ffffff; /* Cor do texto */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para o campo de entrada da umidade */
+.input-umidade {
+  border: none; /* Remove borda padrão */
+  outline: none; /* Remove contorno ao focar */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-size: 18px; /* Tamanho da fonte */
+  background-color: #7c7c7c2b; /* Fundo cinza transparente */
+  color: #ffffff; /* Cor do texto */
+  width: calc(100% - 100px); /* Largura ajustada */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para o botão de previsão de temperatura */
+.botao-previsao {
+  border: none; /* Remove borda padrão */
+  outline: none; /* Remove contorno ao focar */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-size: 18px; /* Tamanho da fonte */
+  background-color: #7c7c7c2b; /* Fundo cinza transparente */
+  color: #ffffff; /* Cor do texto */
+  width: 100%; /* Largura total */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.texto {
+  color: #ffffff; /* Cor do texto */
+  margin-top: 20px; 
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href=".\static\css\styles.css" />
+    <title>Projeto Previsão do Tempo</title>
+  </head>
+  <body>
+    <div class="caixa-Maior">
+      <input class="input-cidade" placeholder="Digite o nome da Cidade" />
+      <button class="botao-buscar" onclick="clickBotao()">
+        <img
+          class="img-busca"
+          alt="busca"
+          src="https://www.svgrepo.com/show/488200/find.svg"
+        />
+      </button>
+      <div class="caixa-Media"></div>
+      <h2 class="cidade">Tempo em:</h2>
+      <p class="temp">Medidor da temperatura: ºC</p>
+      <div class="caixa-Menor">
+        <img
+          class="img-previsao"
+          alt="previsao"
+          src="https://openweathermap.org/img/wn/04n.png"
+        />
+        <p class="texto-previsao">Condição do clima:</p>
+      </div>
+      <p class="umidade">Umidade: <span class="umidade-valor"></span></p>
+    </div>
+
+    <div class="caixa-Maior" id="big-box">
+      <h2 class="texto">Desastres;</h2>
+      <form action="/predict" method="POST" class="col s12">
+        <p class="texto" id="enchente">Chance de Incêndio florestal:</p>
+        <div class="input-field col s4">
+          <label for="first_name"
+            ><b class="texto"> temperatura </b>
+            <br />
+          </label>
+          <input
+            type="text"
+            id="first_name"
+            name="temperature"
+            class="validate"
+            placeholder="Insira temperatura"
+          />
+        </div>
+        <div>
+          <label for="second_name"
+            ><b class="texto"> Oxigênio </b>
+            <br />
+          </label>
+          <input
+            type="text"
+            id="second_name"
+            name="oxygem"
+            class="validate"
+            placeholder="Insira oxigênio"
+          />
+        </div>
+        <div>
+          <label for="third_name"
+            ><b class="texto"> Umidade </b>
+            <br />
+          </label>
+          <input
+            type="text"
+            id="third_name"
+            name="Umidade"
+            class="validate"
+            placeholder="Insira umidade"
+          />
+        </div>
+        <!-- Novo botão para acionar a previsão de temperatura -->
+        <button type="submit" class="botao-previsao" onclick="clickPrevisao()">
+          Obter Chance de desastres naturais.
+        </button>
+      </form>
+
+      <h3 class="texto">Taxa de acertividade: {{pred}}%</h3>
+    </div>
+
+    <script src=".\static\js\scripts.js" defer></script>
+  </body>
+</html>
